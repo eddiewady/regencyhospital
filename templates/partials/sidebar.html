@@ -1,0 +1,99 @@
+
+<!-- Sidebar -->
+<nav id="sidebar" class="proclinic-bg">
+    <div class="sidebar-header">
+        <a href="index.html"></a>
+    </div>
+    <ul class="list-unstyled components">
+        <li class="active">
+            <a href="#nav-dashboard" data-toggle="collapse" aria-expanded="true">
+                <span class="ti-home"></span> Dashboard
+            </a>
+            <ul class="collapse list-unstyled show" id="nav-dashboard">
+                <li>
+                    <a href="{% url 'index' %}">Home-receptionist</a>
+                </li>	
+                <li>
+                    <a href="{% url 'receptionists' %}">Profile</a>
+                </li>
+                <li>
+                    <a href="{% url 'logout' %}">Logout</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#nav-patients" data-toggle="collapse" aria-expanded="false">
+                <span class="ti-wheelchair"></span> Patients
+            </a>
+            <ul class="collapse list-unstyled" id="nav-patients">
+                <li>
+                    <a href="{% url 'add_patient' %}">Add Patient</a>
+                </li>
+                <li>
+                    <a href="{% url 'view_patient' %}">All Patient</a>
+                    
+                </li>
+               
+               
+            </ul>
+        </li>
+        <li>
+            <a href="#nav-doctors" data-toggle="collapse" aria-expanded="false">
+                <span class="ti-user"></span> Doctors
+            </a>
+            <ul class="collapse list-unstyled" id="nav-doctors">
+                <li>
+                    <a href="{% url 'add_doctor' %}">Add Doctor</a>
+                </li>
+                <li>
+                    <a href="{% url 'view_doctor' %}">All Doctors</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#nav-appointment" data-toggle="collapse" aria-expanded="false">
+                <span class="ti-pencil-alt"></span> Appointments
+            </a>
+            <ul class="collapse list-unstyled" id="nav-appointment">
+               
+                <li>
+                    <a href="{% url 'view_appointment' %}">All Appointments</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#nav-appointment" data-toggle="collapse" aria-expanded="false">
+                <span class="ti-pencil-alt"></span> Emergency
+            </a>
+            <ul class="collapse list-unstyled" id="nav-appointment">
+               
+                <li>
+                    <a href="appointments.html">All Appointments</a>
+                </li>
+                <li>
+                    <a href="about-appointment.html">Appointment Details</a>
+                </li>
+                
+            </ul>
+        </li>
+        <li>
+            <a href="#nav-pages" data-toggle="collapse" aria-expanded="false">
+                <span class="ti-file"></span> Logout
+            </a>
+            <ul class="collapse list-unstyled" id="nav-pages">
+                <li>
+                    <a href="{% url 'logout' %}">Logout </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="nav-help animated fadeIn">
+        <h5><span class="ti-comments"></span> Need Help</h5>
+        <h6>
+            <span class="ti-mobile"></span> +255 652-389-730</h6>
+        <h6>
+            <span class="ti-email"></span> email@chis.com</h6>
+        <p class="copyright-text">Copy rights &copy; 2021</p>
+    </div>
+</nav>
+<!-- /Sidebar -->
